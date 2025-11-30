@@ -8,7 +8,7 @@ function evenOrOdd(number) {
     ? `Number ${number} is ${"even".toUpperCase()} Number`
     : `Number ${number} is ${"odd".toUpperCase()} Number`;
 }
-console.log(evenOrOdd("USHEN 10 hello"));
+console.log(evenOrOdd("USCEN 10 hello"));
 console.log(evenOrOdd("10 hello"));
 console.log(evenOrOdd(12));
 console.log(evenOrOdd(15));

@@ -7,5 +7,5 @@ function greet(name) {
   if (name === "johnny") return "hello my love";
   return "Hello, " + name + "!";
 }
-console.log(greet("ushen"));
+console.log(greet("uscen"));
 console.log(greet("johnny"));
