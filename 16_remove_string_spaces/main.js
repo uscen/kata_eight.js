@@ -32,6 +32,8 @@ console.log(removeSpc03(" usc en "));
 //  │ METHOD 04                                                               │
 //  ╰─────────────────────────────────────────────────────────────────────────╯
 // Remove All WhiteSpace
+// NOTE: Return here to try understand why Regex \s+ still keep first and last whitespace to understand remove
+// trim method
 function removeSpc04(str) {
   let strWithoutWhiteSpace = "";
   str
