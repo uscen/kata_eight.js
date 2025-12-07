@@ -1,21 +1,19 @@
 //  ╭─────────────────────────────────────────────────────────────────────────╮
 //  │ METHOD 01                                                               │
 //  ╰─────────────────────────────────────────────────────────────────────────╯
-function switchItUp(number) {
-  switch (number) {
-    case 1:
-      return "one"; // NOTE: return already stop execution so no need for [break] keyword here
-    case 2:
-      return "two";
-    case 3:
-      return "three";
-    case 4:
-      return "four";
-    case 5:
-      return "five";
-    // ...
-    default:
-      break;
+function bonusTime01(salary, bonus) {
+  let finalSalary = salary;
+  if (bonus) {
+    finalSalary *= 10;
   }
+  return `\u00A3${finalSalary}`;
 }
-console.log(switchItUp(2));
+console.log(bonusTime01(100, true));
+
+//  ╭─────────────────────────────────────────────────────────────────────────╮
+//  │ METHOD 01                                                               │
+//  ╰─────────────────────────────────────────────────────────────────────────╯
+function bonusTime02(salary, bonus) {
+  return bonus ? `\u00A3${salary * 10}` : `\u00A3${salary}`;
+}
+console.log(bonusTime02(100, true));
