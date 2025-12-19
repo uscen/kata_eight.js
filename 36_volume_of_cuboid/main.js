@@ -1,13 +1,10 @@
 //  ╭─────────────────────────────────────────────────────────────────────────╮
 //  │ METHOD 01                                                               │
 //  ╰─────────────────────────────────────────────────────────────────────────╯
-function firstNonConsecutive(arr) {
-  let target = null;
-  for (let i = 1; i < arr.length; i++) {
-    if (arr[i] - 1 !== arr[i - 1]) {
-      target = arr[i];
-    }
+// the volume of cuboid
+class Kata {
+  static getVolumeOfCuboid(length, width, height) {
+    return width * height * length;
   }
-  return target;
 }
-console.log(firstNonConsecutive[(1, 2, 3, 4, 6)]);
+console.log(Kata.getVolumeOfCuboid(10, 10, 10));

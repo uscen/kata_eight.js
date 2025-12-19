@@ -1,13 +1,10 @@
 //  ╭─────────────────────────────────────────────────────────────────────────╮
 //  │ METHOD 01                                                               │
 //  ╰─────────────────────────────────────────────────────────────────────────╯
-function firstNonConsecutive(arr) {
-  let target = null;
-  for (let i = 1; i < arr.length; i++) {
-    if (arr[i] - 1 !== arr[i - 1]) {
-      target = arr[i];
-    }
-  }
-  return target;
+function formatMoney(amount) {
+  return `$${amount.toFixed(2)}`;
+  // return Number.isInteger(amount) ? `$${amount}.00` : `$${amount.toFixed(2)}`;
 }
-console.log(firstNonConsecutive[(1, 2, 3, 4, 6)]);
+console.log(formatMoney(3));
+console.log(formatMoney(3.1));
+console.log(formatMoney(3.99));

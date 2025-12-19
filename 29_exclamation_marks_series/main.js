@@ -5,7 +5,7 @@ function remove01(str) {
   let strWihoutMark = str.slice(0, str.indexOf("!"));
   return strWihoutMark;
 }
-console.log(remove01("ushen !!!!"));
+console.log(remove01("uscen !!!!"));
 console.log(remove01("Hi!"));
 // Invalid
 console.log(remove01("!Hi!"));
@@ -22,7 +22,7 @@ function remove02(str) {
     })
     .join("");
 }
-console.log(remove02("ushen !!!!"));
+console.log(remove02("uscen !!!!"));
 console.log(remove02("Hi!"));
 // valid
 console.log(remove02("!Hi!"));
@@ -34,7 +34,7 @@ console.log("#".repeat(50));
 function remove03(str) {
   return str.match(/[^!]/gi).join("");
 }
-console.log(remove03("ushen !!!!"));
+console.log(remove03("uscen !!!!"));
 console.log(remove03("Hi!"));
 // valid
 console.log(remove03("!Hi!"));
@@ -46,7 +46,7 @@ console.log("#".repeat(50));
 function remove04(str) {
   return str.replaceAll("!", "");
 }
-console.log(remove04("ushen !!!!"));
+console.log(remove04("uscen !!!!"));
 console.log(remove04("Hi!"));
 // valid
 console.log(remove04("!Hi!"));
@@ -63,7 +63,7 @@ function remove05(str) {
   }
   return strWithoutBangs;
 }
-console.log(remove05("ushen !!!!"));
+console.log(remove05("uscen !!!!"));
 console.log(remove05("Hi!"));
 // valid => keep the first ! if Exists
 console.log(remove05("!Hi!"));
