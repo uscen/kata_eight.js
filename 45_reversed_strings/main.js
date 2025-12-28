@@ -1,44 +1,37 @@
 //  ╭─────────────────────────────────────────────────────────────────────────╮
 //  │ METHOD 01                                                               │
 //  ╰─────────────────────────────────────────────────────────────────────────╯
-function removeExlamationMarks01(s) {
-  return s
+function reversedStr01(str) {
+  return str
     .split("")
-    .filter((char) => char !== "!")
-    .join("");
+    .reverse()
+    .reduce((acc, curr) => acc + curr);
 }
-console.log(removeExlamationMarks01("usc!en"));
-console.log(removeExlamationMarks01("!!usc!en"));
+console.log(reversedStr01("uscen"));
 
 //  ╭─────────────────────────────────────────────────────────────────────────╮
-//  │ METHOD 01                                                               │
+//  │ METHOD 02                                                               │
 //  ╰─────────────────────────────────────────────────────────────────────────╯
-function removeExlamationMarks02(s) {
-  return s.replaceAll(/!/gi, "");
+function reversedStr02(str) {
+  let arrayfromStr = Array.from(str);
+  let reversedStr = [];
+  let index = 0;
+  while (index < arrayfromStr.length) {
+    let firstItem = arrayfromStr.shift();
+    reversedStr.unshift(firstItem);
+  }
+  return reversedStr.reduce((acc, curr) => acc + curr);
 }
-console.log(removeExlamationMarks01("usc!en"));
-console.log(removeExlamationMarks01("!!usc!en"));
+console.log(reversedStr02("uscen"));
 
 //  ╭─────────────────────────────────────────────────────────────────────────╮
 //  │ METHOD 03                                                               │
 //  ╰─────────────────────────────────────────────────────────────────────────╯
-function removeExlamationMarks03(s) {
-  return s.match(/[^!]/gi).join("");
-}
-console.log(removeExlamationMarks03("usc!en"));
-console.log(removeExlamationMarks03("!!usc!en"));
-
-//  ╭─────────────────────────────────────────────────────────────────────────╮
-//  │ METHOD 04                                                               │
-//  ╰─────────────────────────────────────────────────────────────────────────╯
-function removeExlamationMarks04(s) {
-  let sWithoutExMark = "";
-  for (let i = 0; i < s.length; i++) {
-    if (s[i] !== "!") {
-      sWithoutExMark += s[i];
-    }
+function reversedStr03(str) {
+  let result = "";
+  for (let i = str.length - 1; i >= 0; i--) {
+    result += str[i];
   }
-  return sWithoutExMark;
+  return result;
 }
-console.log(removeExlamationMarks04("usc!en"));
-console.log(removeExlamationMarks04("!!usc!en"));
+console.log(reversedStr03("uscen"));
