@@ -1,9 +1,9 @@
 //  ╭─────────────────────────────────────────────────────────────────────────╮
 //  │ METHOD 01                                                               │
 //  ╰─────────────────────────────────────────────────────────────────────────╯
-function isPlindrome(str) {
-  return str.toLowerCase() === str.toLowerCase().split("").reverse().join("");
+function simpleMultiplication(number) {
+  return number % 2 === 0 ? number * 8 : number * 9;
 }
-console.log(isPlindrome("Abba"));
-console.log(isPlindrome("Hello"));
-console.log(isPlindrome("Madam"));
+console.log(simpleMultiplication(2));
+console.log(simpleMultiplication(1));
+console.log(simpleMultiplication(8));

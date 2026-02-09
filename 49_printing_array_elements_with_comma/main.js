@@ -1,9 +1,5 @@
 //  ╭─────────────────────────────────────────────────────────────────────────╮
 //  │ METHOD 01                                                               │
 //  ╰─────────────────────────────────────────────────────────────────────────╯
-function isPlindrome(str) {
-  return str.toLowerCase() === str.toLowerCase().split("").reverse().join("");
-}
-console.log(isPlindrome("Abba"));
-console.log(isPlindrome("Hello"));
-console.log(isPlindrome("Madam"));
+function e(arr) {}
+console.log(printingArray01(["h", "e", "l", "l", "o"]));

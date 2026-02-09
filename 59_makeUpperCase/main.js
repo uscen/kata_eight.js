@@ -1,9 +1,9 @@
 //  ╭─────────────────────────────────────────────────────────────────────────╮
 //  │ METHOD 01                                                               │
 //  ╰─────────────────────────────────────────────────────────────────────────╯
-function isPlindrome(str) {
-  return str.toLowerCase() === str.toLowerCase().split("").reverse().join("");
+function isUpperCase(str) {
+  return str.split("").every((s) => s.toUpperCase() === s);
 }
-console.log(isPlindrome("Abba"));
-console.log(isPlindrome("Hello"));
-console.log(isPlindrome("Madam"));
+console.log(isUpperCase("HELLO"));
+console.log(isUpperCase("hello"));
+console.log(isUpperCase("heLLo"));

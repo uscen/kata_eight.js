@@ -1,9 +1,9 @@
 //  ╭─────────────────────────────────────────────────────────────────────────╮
 //  │ METHOD 01                                                               │
 //  ╰─────────────────────────────────────────────────────────────────────────╯
-function isPlindrome(str) {
-  return str.toLowerCase() === str.toLowerCase().split("").reverse().join("");
+function sumArray(numbers) {
+  return numbers.reduce((acc, cur) => acc + cur, 0);
 }
-console.log(isPlindrome("Abba"));
-console.log(isPlindrome("Hello"));
-console.log(isPlindrome("Madam"));
+console.log(sumArray([-2.398]));
+console.log(sumArray([1, 2, 3]));
+console.log(sumArray([1, 5.2, 4, 0, -1]));
