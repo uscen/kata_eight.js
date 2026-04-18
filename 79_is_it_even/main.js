@@ -1,7 +1,9 @@
 //  ╭─────────────────────────────────────────────────────────────────────────╮
 //  │ METHOD 01                                                               │
 //  ╰─────────────────────────────────────────────────────────────────────────╯
-function twoSort(s) {
-  return s.sort()[0].split("").join("***");
+function testEven(n) {
+  return n % 2 === 0;
 }
-console.log(twoSort(["take", "over", "bitcoin", "kim", "the", "world"]));
+console.log(testEven(2));
+console.log(testEven(10));
+console.log(testEven(11));
