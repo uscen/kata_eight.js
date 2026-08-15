@@ -2,6 +2,6 @@
 //  │ METHOD 01                                                               │
 //  ╰─────────────────────────────────────────────────────────────────────────╯
 function move(position, roll) {
-  return;
+  return roll * 2 + position;
 }
-console.log(move(10, 20));
+console.log(move(3, 6));
